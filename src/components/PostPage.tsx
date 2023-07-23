@@ -42,20 +42,20 @@ const PostPage = () => {
         {setPost()}
       </div>
       <div className="flex flex-row justify-between items-center mt-4">
-        <div className="w-[150px] h-[48px] border border-black rounded">
+        <div className="w-[150px] h-[48px]">
           <WhiteButton
             text="PREV"
-            className=" flex flex-row justify-center items-center rounded-lg"
+            className=" flex flex-row justify-center items-center"
             onClick={leftClicked}
           />
         </div>
         <div className="w-full flex flex-row justify-center items-center text-[24px]">
           {pageNum}/4
         </div>
-        <div className="w-[150px] h-[48px] border border-black rounded">
+        <div className="w-[150px] h-[48px] ">
           <WhiteButton
             text="NEXT"
-            className=" flex flex-row justify-center items-center rounded-lg "
+            className=" flex flex-row justify-center items-center"
             onClick={rightClicked}
           />
         </div>

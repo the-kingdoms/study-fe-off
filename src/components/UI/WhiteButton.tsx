@@ -6,7 +6,7 @@ interface Props {
 const WhiteButton = ({ onClick, text, className }: Props) => {
   return (
     <div
-      className={`w-full h-full bg-white-500 ${className}`}
+      className={`w-full h-full bg-white-500 border border-black rounded-lg hover:bg-blue-300 hover:cursor-pointer ${className}`}
       onClick={onClick}
     >
       <div className="text-black text-lg flex-none">{text}</div>
