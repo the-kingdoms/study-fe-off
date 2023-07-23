@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/study-fe-off/static/css/main.95748fe4.css",
+    "main.js": "/study-fe-off/static/js/main.5ba60ea1.js",
+    "static/js/787.26755f75.chunk.js": "/study-fe-off/static/js/787.26755f75.chunk.js",
+    "index.html": "/study-fe-off/index.html",
+    "main.95748fe4.css.map": "/study-fe-off/static/css/main.95748fe4.css.map",
+    "main.5ba60ea1.js.map": "/study-fe-off/static/js/main.5ba60ea1.js.map",
+    "787.26755f75.chunk.js.map": "/study-fe-off/static/js/787.26755f75.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95748fe4.css",
+    "static/js/main.5ba60ea1.js"
+  ]
+}
