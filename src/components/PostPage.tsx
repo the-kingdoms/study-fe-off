@@ -28,7 +28,7 @@ const PostPage = () => {
   const setPost = () => {
     const posts = [];
     for (let i = 1; i < 11; i++) {
-      let post = <PostCard num={i} />;
+      let post = <PostCard num={i} postId="/post/:id" />;
       posts.push(post);
     }
     return posts;
