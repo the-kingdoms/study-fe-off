@@ -7,10 +7,10 @@ interface Props {
 const BlueButton = ({ onClick, text, className }: Props) => {
   return (
     <div
-      className={`flex flex-col w-full h-full bg-blue-500 ${className}`}
+      className={`flex flex-col w-full h-full bg-blue-500 hover:bg-white text-white hover:text-sky-500 hover:cursor-pointer ${className}`}
       onClick={onClick}
     >
-      <div className="text-white text-lg flex-none my-auto">{text}</div>
+      <div className="text-lg flex-none my-auto ">{text}</div>
     </div>
   );
 };
