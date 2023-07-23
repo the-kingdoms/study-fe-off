@@ -12,14 +12,14 @@ function App() {
       component: <SignInForm />,
     },
     {
-      path: "/2",
+      path: "/signup",
       component: <CreateAccount />,
     },
     {
-      path: "/4",
+      path: "/posts",
       component: <Post />,
     },
-    { path: "/5", component: <PostForm /> },
+    { path: "/post/create", component: <PostForm /> },
   ];
 
   return (
