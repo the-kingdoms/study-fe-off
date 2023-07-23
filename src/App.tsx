@@ -2,13 +2,24 @@ import Layout from "./layout/Layout";
 import SignInForm from "./components/SignInForm";
 import CreateAccount from "./components/CreateAccount";
 import { Route, Routes } from "react-router-dom";
+
 function App() {
+  const paths = [
+    {
+      path: "/",
+      component: <SignInForm />,
+    },
+    {
+      path: "/2",
+      component: <CreateAccount />,
+    },
+  ];
+
   return (
     <Routes>
-      <Layout>
-        <Route path="/" element={<SignInForm />} />
-        <Route path="/2" element={<CreateAccount />} />
-      </Layout>
+      {paths.map((path) => (
+        <Route path={path.path} element={<Layout>{path.component}</Layout>} />
+      ))}
     </Routes>
   );
 }
