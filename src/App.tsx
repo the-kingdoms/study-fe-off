@@ -1,12 +1,25 @@
-import React from "react";
+import Layout from "./layout/Layout";
 import SignInForm from "./components/SignInForm";
 import CreateAccount from "./components/CreateAccount";
 import { Route, Routes } from "react-router-dom";
+
 function App() {
+  const paths = [
+    {
+      path: "/",
+      component: <SignInForm />,
+    },
+    {
+      path: "/2",
+      component: <CreateAccount />,
+    },
+  ];
+
   return (
     <Routes>
-      <Route path="/" element={<SignInForm />} />
-      <Route path="/2" element={<CreateAccount />} />
+      {paths.map((path) => (
+        <Route path={path.path} element={<Layout>{path.component}</Layout>} />
+      ))}
     </Routes>
   );
 }
