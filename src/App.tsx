@@ -3,6 +3,7 @@ import SignInForm from "./components/SignInForm";
 import CreateAccount from "./components/CreateAccount";
 import PostPage from "./components/PostPage";
 import { Route, Routes } from "react-router-dom";
+import Post from "./components/Post";
 
 function App() {
   const paths = [
@@ -17,6 +18,10 @@ function App() {
     {
       path: "/3",
       component: <PostPage />,
+    },
+    {
+      path: "/4",
+      component: <Post />,
     },
   ];
 

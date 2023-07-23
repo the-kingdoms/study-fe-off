@@ -6,7 +6,7 @@ interface Props {
 const InputField = ({ text, className }: Props) => {
   return (
     <input
-      className={`w-full h-full border-b border-black text-lg placeholder:text-black placeholder:font-bold focus:outline-none${
+      className={`w-full h-full border-b border-black text-lg placeholder:text-black placeholder:font-bold focus:outline-none ${
         className ?? ""
       }`}
       placeholder={text}
