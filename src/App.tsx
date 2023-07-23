@@ -4,6 +4,7 @@ import CreateAccount from "./components/CreateAccount";
 import PostPage from "./components/PostPage";
 import { Route, Routes } from "react-router-dom";
 import Post from "./components/Post";
+import PostForm from "./components/post/PostForm";
 
 function App() {
   const paths = [
@@ -12,17 +13,18 @@ function App() {
       component: <SignInForm />,
     },
     {
-      path: "/2",
+      path: "/signup",
       component: <CreateAccount />,
     },
     {
-      path: "/3",
+      path: "/posts",
       component: <PostPage />,
     },
     {
-      path: "/4",
+      path: "/post/:id",
       component: <Post />,
     },
+    { path: "/post/create", component: <PostForm /> },
   ];
 
   return (
