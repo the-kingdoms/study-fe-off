@@ -1,6 +1,7 @@
 import Layout from "./layout/Layout";
 import SignInForm from "./components/SignInForm";
 import CreateAccount from "./components/CreateAccount";
+import PostPage from "./components/PostPage";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -12,6 +13,10 @@ function App() {
     {
       path: "/2",
       component: <CreateAccount />,
+    },
+    {
+      path: "/3",
+      component: <PostPage />,
     },
   ];
 

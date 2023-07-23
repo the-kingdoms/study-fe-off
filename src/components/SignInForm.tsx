@@ -1,7 +1,13 @@
 import BlueButton from "./UI/BlueButton";
 import InputField from "./UI/InputField";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 const SignInForm = () => {
+  const navigate = useNavigate();
+  const SignIn = () => {
+    navigate("/3");
+  };
+
   return (
     <div
       className="flex flex-col
@@ -20,8 +26,9 @@ const SignInForm = () => {
           </div>
           <div className="w-[600px] h-[60px] mt-[24px]">
             <BlueButton
+              onClick={SignIn}
               text="Sign Up"
-              className=" flex flex-row justify-center items-center  rounded-lg"
+              className=" flex flex-row justify-center items-center rounded-lg"
             ></BlueButton>
           </div>
         </div>
