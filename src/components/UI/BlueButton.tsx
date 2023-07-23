@@ -1,13 +1,10 @@
-import { useState } from "react";
 interface Props {
+  onClick?: () => void;
   text: string;
   className?: string;
 }
 
-const BlueButton = ({ text, className }: Props) => {
-  const onClick = () => {
-    //상위로 쏴주기
-  };
+const BlueButton = ({ onClick, text, className }: Props) => {
   return (
     <div
       className={`flex flex-col w-full h-full bg-blue-500 ${className}`}
