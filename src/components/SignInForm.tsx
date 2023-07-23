@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 const SignInForm = () => {
   const navigate = useNavigate();
   const SignIn = () => {
-    navigate("/3");
+    navigate("/posts");
   };
 
   return (
@@ -35,7 +35,7 @@ const SignInForm = () => {
       </form>
       <div className="flex flex-row justify-center items-center mt-[19px]">
         <div className="mr-[10px]">Don’t have an account? </div>
-        <Link to={"/2"} className="text-sky-400">
+        <Link to={"/signup"} className="text-sky-400">
           Sign Up Here
         </Link>
       </div>
